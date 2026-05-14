@@ -180,7 +180,7 @@ with col2:
     ax2.fill_between(x_partial, 0, y_partial, alpha=0.4, color='lightblue')
     
     # Current point
-ax2.plot(current_angle_rad, x_point, 'ro', markersize=12, markeredgecolor='darkred', markeredgewidth=2, label=f'Current point: θ = {angle_pi}')
+    ax2.plot(current_angle_rad, x_point, 'ro', markersize=12, markeredgecolor='darkred', markeredgewidth=2, label=f'Current point: θ = {angle_pi}')
 
     # Highlight x-value (vertical line)
     ax2.plot([current_angle_rad, current_angle_rad], [0, x_point], 'orange', linewidth=3, alpha=0.8, label=f'cos({angle_pi}) = {x_point:.3f}')
